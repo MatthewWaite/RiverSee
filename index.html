@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript">
+        jQuery(function( $ ){
+            /**
+             * Most jQuery.localScroll's settings, actually belong to jQuery.ScrollTo, check it's demo for an example of each option.
+             * @see http://flesler.demos.com/jquery/scrollTo/
+             * You can use EVERY single setting of jQuery.ScrollTo, in the settings hash you send to jQuery.LocalScroll.
+             */
+            
+            // The default axis is 'y', but in this demo, I want to scroll both
+            // You can modify any default like this
+            $.localScroll.defaults.axis = 'xy';
+            
+            /**
+             * NOTE: I use $.localScroll instead of $('#navigation').localScroll() so I
+             * also affect the >> and << links. I want every link in the page to scroll.
+             */
+            $.localScroll({
+                target: '#content',// could be a selector or a jQuery object too.
+                queue:true,
+                duration:1000,
+                hash:false,
+                onBefore:function( e, anchor, $target ){
+                    // The 'this' is the settings object, can be modified
+                },
+                onAfter:function( anchor, settings ){
+                    // The 'this' contains the scrolled element (#content)
+                }
+            });
+        });
+    </script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="load-overlay"></div>
+        <div class="border-nav" id="navigation">
+            <a href="#section2" class="top">The Show</a>
+            <a href="#section3" class="right">Contact</a>
+            <a href="#section1" class="left">Blog</a>
+            <a href="#section4" class="bottom">Story Submissions</a>
+            <a href="#home" class="top-right" id="home-button"></a>
+        </div>
+        <div class="inside-pages" id="content">
+            <div class="section">
+            <div id="home" class="home-page sub">
+                <div class="half-screen" style="z-index:2;">
+                    <div class="light-screen">
+                        <div class="s-content">
+                            <b class="s-name"></b>
+                            <div class="full-name">
+                                <h2>The River See Story Bank</h2>
+                            </div>
+
+                            <div class="tag-line">
+                                <h5>Submit your story to contribute to this work</h4>
+                            </div>
+
+                            <nav class="s-menu">
+                                <ul>
+                                    <li><a href="">Story Bank</a></li>
+                                    <li><a href="">Learn More</a></li>
+                                    <li><a href="">Submit Your Story</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                <a class="s-logo"></a>
+                </div>
+                <div class="half-screen blue">
+                    <div class="blue-screen">
+                        <div class="r-content">                        
+                            <b class="r-name"></b>
+                            <div class="p-name">
+                                <h1>River See</h1>
+                            </div>
+                            <div class="r-description">
+                                <div class="r-description-inner">
+                                <p>A Theatrical Jazz Performance Installation<br>Written and Composed by Sharon Bridgforth</p>
+                                </div>
+                            </div>
+                            <a href="#section2" class="arrow-down" id="arrow"></a>
+                        </div>
+                        <div class="blue-overlay"></div>
+                        <div>
+                            <div class="inner-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="section" id="big-section">
+                    <ul>
+                        <li class="sub table-dis" id="section1">
+                            <div class="table-container">
+                                <div class="about-container">
+                                <h4 class="section-title">About River See</h4>
+                                <ul class="section-nav">
+                                    <li><button class="section-button">Performance</button></li>
+                                    <li><button class="section-button">History</button></li>
+                                </ul>
+                                <div class="about-river">
+                                    <div class="about-content">
+                                        <div class="about-content-inner">
+                                        River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.River See is an improvisational jazz performance instillation that invites the audince to participate.
+                                        </div>
+                                    </div>
+                                    <ul class="about-dates">
+                                        <li class="about-date-title"><h4>Performance Dates</h4></li>
+                                        <li class="about-date-schedule">
+                                            <p>This Venue</p>
+                                            <p>April 24 - 8:00am</p>
+                                            <h5>Book Your Tickets</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="book-it">Book your ticket</button>
+                            </div>
+                                <div class="blue-overlay"></div>
+                            <div class="inner-image-section1"></div>
+                            </div>
+
+                        </li>
+                        <li class="sub table-dis" id="section2">
+                            <div class="table-container">
+                                <div class="cent">
+                                    <h3>River See</h3>
+                                    <h5>A Theatrical Jazz Performance Installation<br>Written and Composed by Sharon Bridgforth</h5>
+                                    <p id="river-description">A series of blues stories set on a river boat, with juking women, queers, deviants and Seers, River See is the prayer before the first Great African American Migration (1910).  Experienced through the heart of, SEE, a young woman-in-training, we journey through a world where the living, the dead, the unborn, the past the present and the future co-exist.  Lil NayNay, Grandma-Aunt Porkchopps, Big Suzi, Mr. Goodies, Mrs. Shine, Ms. Ada and she ole ass dog Lil Lady shepherd the way.  With rowdy spirit guides and loving elders, SEE grows into her calling as the answered prayer, as she is prepared to be sent "to the North." River See explores blues stories as living arrangements of jazz. Through an improvisational process that happens live during performance/with singers, dancers and audience members, Bridgforth composes a moving soundscape in support of SEE’s Journey.  Through this collective process all are responsible for this story/about Love.</p>
+                                </div>
+                                <div>
+                                <div class="blue-overlay"></div>
+                            <div class="inner-image-section2"></div>
+                            </div>
+                        </li>
+                        <li class="sub table-dis" id="section3">
+                            <div class="table-container">
+                                <div class="reach-out-cent">
+                                    <h3>We Would Love to Hear From You</h3>
+                                    
+                                </div>
+                                <div>
+                                <div class="blue-overlay"></div>
+                            <div class="inner-image-section3"></div>
+                            </div>
+
+
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <ul>
+                        <li class="sub table-dis" id="section4">
+                            <div class="table-container">
+                                <div class="story-container">
+                                <ul class="toggle">
+                                                <li><input type="radio" name="item_type" class="green"/><label>I love</label></li>
+                                                <li><input type="radio" name="item_type" class="red"/><label>I offer</label></li>
+                                                <li><input type="radio" name="item_type" class="all"/><label>I am</label></li>
+                                                <li><input type="radio" name="item_type" class="all"/><label>I dream</label></li>
+                                              </ul>
+                                <div class="story-bank">
+                                    <div class="story-content">
+                                        <div class="story-content-inner">
+                                        <section class="grid-container">
+                                              <div class="grid">
+                                                <a><div class="item i1"><p class="title">Title</p></div></a>
+                                                <a><div class="item i2"><p class="title">Title</p></div></a>
+                                                <a><div class="item i3"><p class="title">Title</p></div></a>
+                                                <a><div class="item i4"><p class="title">Title</p></div></a>
+                                                <a><div class="item i5"><p class="title">Title</p></div></a>
+                                                <a><div class="item i6"><p class="title">Title</p></div></a>
+                                                <a><div class="item i7"><p class="title">Title</p></div></a>
+                                                <a><div class="item i8"><p class="title">Title</p></div></a>
+                                                <a><div class="item i9"><p class="title">Title</p></div></a>
+                                                <a><div class="item i10"><p class="title">Title</p></div></a>
+                                                <a><div class="item i11"><p class="title">Title</p></div></a>
+                                                <a><div class="item i12"><p class="title">Title</p></div></a>
+                                                <a><div class="item i13"><p class="title">Title</p></div></a>
+                                                <a><div class="item i14"><p class="title">Title</p></div></a>
+                                                <a><div class="item i15"><p class="title">Title</p></div></a>
+                                              </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blue-overlay"></div>
+                            <div class="inner-image-section4"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+        </div>
+
+        
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
