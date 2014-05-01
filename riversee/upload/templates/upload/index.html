@@ -110,10 +110,11 @@
                                         <h3 class="sumbit-button">Submit Your Story</h3>
                                         <ul>
                                             <li>
-                                            <form action="" id="sumbit-form">
-                                               <input type="text" name="fname" placeholder="Full Name"><br>
+                                            <form action="" method="post" id="sumbit-form">
+                                                {% csrf_token %}
+                                               <input type="text" name="name" placeholder="Full Name"><br>
                                                <input type="text" name="email" placeholder="Email Address"><br>
-                                                <input type="text" name="video" placeholder="Vimeo Video Link"><br>
+                                                <input type="text" name="video_link" placeholder="Vimeo Video Link"><br>
                                                 <input type="submit" value="Submit" id="submit">
                                                 <p>Click "learn more" for instruction</p>
                                             </form>
