@@ -122,8 +122,9 @@ embed, object, video {
 body{
     color: #151515;
     font-size: 14px;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'reight-sans-pro', Arial, sans-serif;
     line-height: 1.8;   
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     
 }
@@ -136,19 +137,31 @@ a:hover{
 b, strong{
     font-weight: 600;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Crimson Text', Georgia, serif;
-    font-weight: 400;
+
+h1, h2 {
+    font-family: "museo", Georgia, serif;
+    font-weight: 300;
     line-height: 1.2;
 }
-h2,h3,h4,h5,h6{ font-style: italic; }
+
+h3,h4,h5,h6{
+    font-family: "freight-sans-pro",sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+h3{ 
+    font-style: italic; 
+    margin: 0em;
+    padding: 1em 0em;
+
+}
 
 h1{ font-size: 42px; }
 h2{ font-size: 36px; }
 h3{ font-size: 30px; }
 h4{ font-size: 24px; }
 h5{ font-size: 18px; }
-h5{ font-size: 12px; font-weight: 700; }
+h6{ font-size: 14px; }
 
 ul, ol{
     padding-left: 1.2em;
@@ -281,7 +294,7 @@ Dark-blue: 1F3669;
     line-height: 50px;
     text-align: center;
     text-decoration: none;
-    color: #151515;
+    color: #939597;
     background-color: #ffffff;
     -webkit-transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -moz-transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -304,7 +317,7 @@ Dark-blue: 1F3669;
     color: #777;
 }
 
-.full-name h2, .tag-line h5{
+.full-name h2{
     color: #1F3669;
 }
 
@@ -313,7 +326,9 @@ Dark-blue: 1F3669;
 }
 
 .tag-line h5 {
+    color: #6D6E70;
     margin-bottom: 50px;
+    margin-top: 10px;
 }
 
 .full-name {
@@ -400,6 +415,11 @@ Dark-blue: 1F3669;
     padding: 0px 15%;
 }
 
+.r-description-inner h4 {
+    padding: 0px;
+    margin: 0px;
+}
+
 .r-description-inner p {
    font-weight: 700;
 }
@@ -412,6 +432,8 @@ Dark-blue: 1F3669;
 
 .p-name h1 {
     color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 .r-content {
@@ -1014,9 +1036,104 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
   text-indent: -9999px;
 }
 
+/* ==========================================================================
+   Accordion
+   ========================================================================== */
 
 
+#accordian {
+    position: relative;
+    width: 100%;
+    color: #6D6E70;
+}
+/*heading styles*/
 
+#accordian h3 {
+  color: #686868;
+  text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    /*fallback for browsers not supporting gradients*/
+    background: white;
+}
+/*heading hover effect*/
+#accordian h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian h3 span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+    list-style-type: none;
+}
+/*links*/
+#accordian ul ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 27px;
+    display: block;
+    padding: 0 15px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+    display: none;
+}
+#accordian li.active ul {
+    display: block;
+}
+
+form {
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.instruction p{
+    padding: 10px 20px;
+    color: #6D6E70;
+    text-transform: none;
+}
+
+form > input {
+    color: #BFBFBF;
+    margin-top: 10px;
+    padding: 10px 0px 10px 5px;
+    width: 75%;
+}
+
+form > input:last-child {
+    margin-bottom: 30px;
+}
+
+#submit {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4166B0;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 75%;
+    border: 2px solid #4166B0;
+}
+
+form p {
+    text-transform: none;
+    color: #BBBDC0;
+    font-size: 10px;
+}
+
+.sumbit-button {
+    position: relative;
+    z-index: 1000;
+}
 
 /* ==========================================================================
    Loader

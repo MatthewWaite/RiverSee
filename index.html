@@ -18,7 +18,12 @@
         <script src="js/masonry.pkgd.min.js"></script>
         <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
         <script type="text/javascript" src="js/jquery.localScroll.js"></script>
+        <script type="text/javascript" src="js/accordion.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script type="text/javascript" src="//use.typekit.net/tjh7dpv.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
         <script type="text/javascript">
         jQuery(function( $ ){
             /**
@@ -78,17 +83,47 @@
                             <div class="tag-line">
                                 <h5>Submit your story to contribute to this work</h4>
                             </div>
-
-                            <nav class="s-menu">
+                            <nav class="s-menu" id="accordian">
                                 <ul>
-                                    <li><a href="">Story Bank</a></li>
-                                    <li><a href="">Learn More</a></li>
-                                    <li><a href="">Submit Your Story</a></li>
+                                    <li>
+                                        <h3>The Story Bank</h3>
+                                    </li>
+                                    <li>
+                                        <h3 class="sumbit-button">Learn More</h3>
+                                        <ul>
+                                            <li class="instruction"><p>You’re invited to submit a 2 minute (or less) response to the prompts below. Use word, song, movement, silence, chants, visual images, etc., language/gestural responses highly encouraged. 
+
+                                                Submissions will be featured on the River See Story Bank.
+
+                                                THE PROMPTS ARE:
+
+                                                I Am
+
+                                                I Dream
+
+                                                I Love
+
+                                                I Offer</p></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3 class="sumbit-button">Submit Your Story</h3>
+                                        <ul>
+                                            <li>
+                                            <form action="" id="sumbit-form">
+                                               <input type="text" name="fname" placeholder="Full Name"><br>
+                                               <input type="text" name="email" placeholder="Email Address"><br>
+                                                <input type="text" name="video" placeholder="Vimeo Video Link"><br>
+                                                <input type="submit" value="Submit" id="submit">
+                                                <p>Click "learn more" for instruction</p>
+                                            </form>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                <a class="s-logo"></a>
                 </div>
                 <div class="half-screen blue">
                     <div class="blue-screen">
@@ -99,7 +134,7 @@
                             </div>
                             <div class="r-description">
                                 <div class="r-description-inner">
-                                <p>A Theatrical Jazz Performance Installation<br>Written and Composed by Sharon Bridgforth</p>
+                                    <h4>A Theatrical Jazz Performance Installation<br>Written and Composed by Sharon Bridgforth</h4>
                                 </div>
                             </div>
                             <a href="#section2" class="arrow-down" id="arrow"></a>
