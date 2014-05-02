@@ -249,8 +249,8 @@ Dark-blue: 1F3669;
 
 .s-name {
     z-index: 10;
-    width: 171px;
-    height: 37px;
+    width: 227px;
+    height: 29px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1141,6 +1141,17 @@ form p {
 
 .load-overlay {
 
+}
+
+/* Video */
+
+#video-explain {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
 }
 
 

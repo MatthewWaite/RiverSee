@@ -67,6 +67,24 @@ $(document).ready(function(){
         
         
     });
+
+    var learning = $('#learning');
+
+    $(learning).click(function () {
+        if ($(learning).hasClass("active-learning")) {
+        	$(learning).removeClass('active-learning');
+            $('#video-explain').stop(true).delay(500).animate({
+                opacity: '0'
+            }, 300);
+            document.getElementById('video-explain').style.display = "none";
+        } else {
+            $(learning).addClass('active-learning');
+            document.getElementById('video-explain').style.display = "block";
+            $('#video-explain').stop(true).delay(500).animate({
+                opacity: '1'
+            }, 300);
+        }
+    });
     
 });
 
@@ -184,6 +202,13 @@ $(document).ready(function () {
         }, 300);
     });
 
+    $('#story-wall').click(function () {
+        document.getElementById('navigation').style.display = "block";
+        $('.border-nav a').stop(true).delay(500).animate({
+            height: '40px'
+        }, 300);
+    });
+
     $('#home-button').click(function () {
         document.getElementById('navigation').style.display = "none";
         $('.border-nav a').stop(true).delay(500).animate({
@@ -235,10 +260,6 @@ jQuery(document).ready(function ($) {
   });
   
 });
-
-
-
-
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36  location.reload();
