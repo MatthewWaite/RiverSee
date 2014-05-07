@@ -303,19 +303,19 @@ Dark-blue: 1F3669;
     transition: all 0.5s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.s-menu ul li a:hover{
-    background-color: #fafafa;
-    color: #777;
+#accordian h3 {
+    -webkit-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.s-menu ul li a:focus{
-    outline: none;
+#accordian h3:hover {
+     background-color: #fafafa;
+    color: black;
 }
 
-.s-menu ul li a:active{
-    background-color: #fafafa;
-    color: #777;
-}
 
 .full-name h2{
     color: #1F3669;
@@ -463,7 +463,7 @@ Dark-blue: 1F3669;
     right:0;
     bottom: 0;
     z-index: 2;
-    background-color: rgba(65, 102, 176, 0.91);
+    background-color: rgba(65, 102, 176, 0.95);
 }
 
 .inner-image {
@@ -571,13 +571,14 @@ Dark-blue: 1F3669;
 
 .top, .right, .left, .bottom {
     position: fixed;
+    font-family: "estilo-regular",sans-serif;
     z-index: 100;
     display: block;
     text-transform: uppercase;
     color: #000;
     font-weight: 700;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 4px;
     width: 100%;
     height: 40px;
@@ -598,7 +599,11 @@ Dark-blue: 1F3669;
 .border-nav .top:hover {
     height: 60px;
     line-height: 60px;
-    
+}
+
+.active-navigation {
+    height: 60px;
+    line-height: 60px;
 }
 
 
@@ -617,6 +622,38 @@ Dark-blue: 1F3669;
 .border-nav .left:hover {
     margin-left: 30px;
     margin-top: -30px;
+}
+
+#navigation .active-left {
+    margin-left: 30px;
+    margin-top: -30px;
+    height: 60px !important;
+    line-height: 60px;
+    cursor: pointer;
+    color: #4166B0;
+}
+
+#navigation .active-right {
+    margin-right: 30px;
+    margin-top: -30px;
+    height: 60px !important;
+    line-height: 60px;
+    cursor: pointer;
+    color: #4166B0;
+}
+
+#navigation .active-top {
+    height: 60px !important;
+    line-height: 60px;
+    cursor: pointer;
+    color: #4166B0;
+}
+
+#navigation .active-bottom {
+    height: 60px !important;
+    line-height: 60px;
+    cursor: pointer;
+    color: #4166B0;
 }
 
 .top-right {
@@ -766,7 +803,6 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    margin-top: -100px;
     position: relative;
     z-index: 3;
 }
@@ -775,8 +811,35 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     color: white;
 }
 
+.cent h3 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    /* text-transform: none; */
+    font-style: normal;
+}
+
+.cent h5 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .1px;
+    padding: 0px;
+    margin: 20px 0px 40px;
+}
+
+.tag-line h6 {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0px 0px 50px 0px;
+    padding: 0px;
+    color: #1F3669;
+}
+
 .cent p {
-    font-weight: 700;
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.2px;
 }
 
 /*--- Story Form */
@@ -1049,10 +1112,11 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 /*heading styles*/
 
 #accordian h3 {
-  color: #686868;
+  color: #1F3669;
   text-transform: uppercase;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 300;
     /*fallback for browsers not supporting gradients*/
     background: white;
 }
@@ -1097,9 +1161,13 @@ form {
 }
 
 .instruction p{
-    padding: 10px 20px;
-    color: #6D6E70;
+    padding: 10px 40px;
+    text-align: left;
+    color: #727272;
     text-transform: none;
+    font-weight: 100;
+    letter-spacing: .1px;
+    font-size: 14px;
 }
 
 form > input {
@@ -1133,6 +1201,10 @@ form p {
 .sumbit-button {
     position: relative;
     z-index: 1000;
+}
+
+#list-border-top {
+    border-top:1px solid #F1F1F2;
 }
 
 /* ==========================================================================
