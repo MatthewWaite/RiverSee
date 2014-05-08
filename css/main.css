@@ -556,6 +556,11 @@ Dark-blue: 1F3669;
 
 */
 
+.story-video {
+    height: 100%;
+    width: 100%;
+}
+
 .page-1 {
     height: 100vh;
 }
@@ -840,6 +845,14 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     text-align: left;
     font-size: 16px;
     letter-spacing: 0.2px;
+}
+
+.item-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    opacity: .8;
 }
 
 /*--- Story Form */
