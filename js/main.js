@@ -1,5 +1,7 @@
 // Home-screen animate
-//---------------------------------------------
+//--------------------------------------------
+
+
 $(document).ready(function(){
     $(".s-name, .r-name").css({
         display: "block"
@@ -107,8 +109,53 @@ $(learning).click(function () {
         }, 300);
     }
 });
+
+// http://masonry.desandro.com/masonry.pkgd.js added as external resource
+// https://rawgithub.com/desandro/classie/master/classie.js added
+
+
+
+var notifElem;
+
+docReady(function () {
+
+    var container = document.querySelector('.masonry');
+    var msnry = new Masonry(container, {
+        columnWidth: 60
+    });
+
+    msnry.on('layoutComplete', function (msnryInstance, laidOutItems) {
+        notify('Masonry layout completed on ' + laidOutItems.length + ' items');
+    });
+
+    eventie.bind(container, 'click', function (event) {
+        // don't proceed if item was not clicked on
+        if (!classie.has(event.target, 'item')) {
+            return;
+        } 
+        // change size of item via class
+        classie.toggle(event.target, 'gigante');
+        // trigger layout
+        msnry.layout();
+    });
+    });
     
 });
+
+$(document).ready(function() {
+    var container = document.querySelector('.masonry');
+    var msnry = new Masonry(container, {
+        columnWidth: 60
+    });
+
+    $('.bigger').click( function() {
+        $(this).parent('.item').toggleClass('gigante');
+         msnry.layout();
+    });
+
+
+});
+
 
 // Darkscreen animate
 //---------------------------------------------
@@ -241,25 +288,35 @@ $(document).ready(function () {
 
 });
 
-jQuery(document).ready(function ($) {
-  
-  var $container = $('.grid').masonry({
-    columnWidth: 280,
-    itemSelector: '.item',
-    isFitWidth: true
-  });
-  
-  
-  
-});
+
 
 $(document).load(function () {
     var none = $('.fullscreen')
     document.find('.fullscreen').style.display = "none";
+    document.find('.fullscreen-icon').style.display = "none";
+});
+
+
+$(document).ready(function() {
+
+    document.getElementById("dev-content").innerHTML='<object type="text/html" data="development1.html" class="dev-content-inner" style="margin-left: -8px"></object>';
+
+    $("#load_development1").on("click", function() {
+        $("#dev-content").load("development1.html");
+    });
+
+    $("#load_development2").on("click", function() {
+        $("#dev-content").load("development2.html");
+    });
+
+    $("#load_development3").on("click", function() {
+        $("#dev-content").load("development3.html");
+    });
 });
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36  location.reload();
+
 
  
 
