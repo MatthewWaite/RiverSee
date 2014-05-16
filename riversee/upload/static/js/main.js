@@ -1,5 +1,7 @@
 // Home-screen animate
-//---------------------------------------------
+//--------------------------------------------
+
+
 $(document).ready(function(){
     $(".s-name, .r-name").css({
         display: "block"
@@ -67,8 +69,93 @@ $(document).ready(function(){
         
         
     });
+
+    var learning = $('#learning');
+    var submit = $('#story-here');
+    var wall = $('#story-wall');
+
+$(submit).click(function () {
+    if ($(learning).hasClass("active-learning")) {
+        $(learning).removeClass('active-learning');
+        $('#video-explain').stop(true).delay(500).animate({
+            opacity: '0'
+        }, 300);
+        document.getElementById('video-explain').style.display = "none";
+    } else {}
+});
+
+$(wall).click(function () {
+    if ($(learning).hasClass("active-learning")) {
+        $(learning).removeClass('active-learning');
+        $('#video-explain').stop(true).delay(500).animate({
+            opacity: '0'
+        }, 300);
+        document.getElementById('video-explain').style.display = "none";
+    } else {}
+});
+
+$(learning).click(function () {
+    if ($(learning).hasClass("active-learning")) {
+        $(learning).removeClass('active-learning');
+        $('#video-explain').stop(true).delay(500).animate({
+            opacity: '0'
+        }, 300);
+        document.getElementById('video-explain').style.display = "none";
+    } else {
+        $(learning).addClass('active-learning');
+        document.getElementById('video-explain').style.display = "block";
+        $('#video-explain').stop(true).animate({
+            opacity: '1'
+        }, 300);
+    }
+});
+
+// http://masonry.desandro.com/masonry.pkgd.js added as external resource
+// https://rawgithub.com/desandro/classie/master/classie.js added
+
+
+
+var notifElem;
+
+docReady(function () {
+
+    var container = document.querySelector('.masonry');
+    var msnry = new Masonry(container, {
+        columnWidth: 60
+    });
+
+    msnry.on('layoutComplete', function (msnryInstance, laidOutItems) {
+        notify('Masonry layout completed on ' + laidOutItems.length + ' items');
+    });
+
+    eventie.bind(container, 'click', function (event) {
+        // don't proceed if item was not clicked on
+        if (!classie.has(event.target, 'item')) {
+            return;
+        } 
+        // change size of item via class
+        classie.toggle(event.target, 'gigante');
+        // trigger layout
+        msnry.layout();
+    });
+    });
     
 });
+
+$(document).ready(function() {
+    var container = document.querySelector('.masonry');
+    var msnry = new Masonry(container, {
+        columnWidth: 60
+    });
+
+    $('.bigger').click( function() {
+        $(this).parent('.item').toggleClass('gigante');
+         msnry.layout();
+    });
+
+
+});
+
 
 // Darkscreen animate
 //---------------------------------------------
@@ -159,8 +246,9 @@ $(document).ready(function () {
             left: (window_width) + "px"
         });
         $('.story-content').css({
-        	height: (window_height * .7) + "px"
+        	height: (window_height * .7) + "px",
         });
+        
     }
 
     viewport_height();
@@ -184,6 +272,13 @@ $(document).ready(function () {
         }, 300);
     });
 
+    $('#story-wall').click(function () {
+        document.getElementById('navigation').style.display = "block";
+        $('.border-nav a').stop(true).delay(500).animate({
+            height: '40px'
+        }, 300);
+    });
+
     $('#home-button').click(function () {
         document.getElementById('navigation').style.display = "none";
         $('.border-nav a').stop(true).delay(500).animate({
@@ -193,55 +288,43 @@ $(document).ready(function () {
 
 });
 
-jQuery(document).ready(function ($) {
-  
-  var $container = $('.grid').masonry({
-    columnWidth: 280,
-    itemSelector: '.item',
-    isFitWidth: true
-  });
-  
-  var arrGreen = new Array($('.i1'),$('.i3'),$('.i6'),$('.i7'));
-  var arrRed = new Array($('.i2'),$('.i4'),$('.i5'),$('.i8'), $('.i9'),$('.i10'),$('.i11'),$('.i12'), $('.i13'),$('.i14'),$('.i15'));
-  
-  $('input').click(function () {
-    $('.item').removeClass('expand');
-    
-    if ($('.green').is(':checked')) {
-      $container.masonry('hide', arrRed);
-      $(arrGreen).each(function (index, element) {
-        element.show();
-      });
-      $container.masonry();
-    } else if ($('.red').is(':checked')) {
-      $container.masonry('hide', arrGreen);
-      $(arrRed).each(function (index, element) {
-        element.show();
-      });
-      $container.masonry();
-    } else if ($('.all').is(':checked')) {
-      $(arrGreen).each(function (index, element) {
-        element.show();
-      });
-      $(arrRed).each(function (index, element) {
-        element.show();
-      });
-      $container.masonry();
-    }
-  });
-  
-  $('.item').click(function () {
-    $(this).toggleClass('expand');
-  });
-  
+
+
+$(document).load(function () {
+    var none = $('.fullscreen')
+    document.find('.fullscreen').style.display = "none";
+    document.find('.fullscreen-icon').style.display = "none";
 });
 
 
+$(document).ready(function() {
 
+    document.getElementById("dev-content").innerHTML='<object type="text/html" data="development1.html" class="dev-content-inner" style="margin-left: -8px"></object>';
 
+    $("#load_development1").on("click", function() {
+        $("#dev-content").load("development1.html");
+    });
+
+    $("#load_development2").on("click", function() {
+        $("#dev-content").load("development2.html");
+    });
+
+    $("#load_development3").on("click", function() {
+        $("#dev-content").load("development3.html");
+    });
+});
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36  location.reload();
+
+
+ 
+
+
+
+
+
+
 
 
 
