@@ -464,7 +464,7 @@ Dark-blue: 1F3669;
     right:0;
     bottom: 0;
     z-index: 2;
-    background-color: rgba(65, 102, 176, 0.95);
+    background-color: rgba(65, 102, 176, 0.90);
 }
 
 .inner-image {
@@ -506,7 +506,7 @@ Dark-blue: 1F3669;
     right:0;
     bottom: 0;
     z-index: 2;
-    background-image: url(../img/PHT2.jpg);
+    background-image: url(../img/PH3-dev.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -535,7 +535,7 @@ Dark-blue: 1F3669;
     right:0;
     bottom: 0;
     z-index: 2;
-    background-image: url(../img/PHT5.jpg);
+    background-image: url(../img/PHT2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -936,10 +936,12 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 }
 
 .dev-content-inner {
-    height: 400px;
+    height: 500px;
     width: 100%;
     color: white;
     font-size: 16px;
+    text-align: center;
+    margin-bottom: -100px;
 }
 
 .dev-content-inner p {
@@ -947,6 +949,18 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     width: inherit;
     color: white;
     font-family: 'reight-sans-pro', Arial, sans-serif;
+}
+
+.dev-image {
+    width: 600px;
+    margin: 20px auto;
+    height: auto;
+}
+
+.pr-image {
+    width: 300px;
+    margin: 20px auto;
+    height: auto;
 }
 
 .about-content-inner {
@@ -1046,6 +1060,7 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 
 .reach-out-cent h3{
     color: white;
+    font-size: 26px;
 }
 
 .social-sharon {
