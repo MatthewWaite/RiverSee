@@ -153,6 +153,7 @@ h3{
     font-style: italic; 
     margin: 0em;
     padding: 1em 0em;
+    color: white;
 
 }
 
@@ -316,6 +317,9 @@ Dark-blue: 1F3669;
     color: black;
 }
 
+#accordian li a {
+     border-bottom: 1px solid #F1F1F2;
+}
 
 .full-name h2{
     color: #1F3669;
@@ -356,6 +360,10 @@ Dark-blue: 1F3669;
     background-image: url(../img/river-see.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.learn-more a {
+    color: white;
 }
 
 .s-logo {
@@ -411,8 +419,17 @@ Dark-blue: 1F3669;
     font-size: 18px;
 }
 
+#above-logo {
+    position: relative;
+    z-index: 1000;
+}
+
 .r-description-inner {
     padding: 0px 15%;
+}
+
+.r-description-inner a {
+    color: white;
 }
 
 .r-description-inner h4 {
@@ -824,6 +841,14 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 }
 
 .cent{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.story-cent{
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -835,14 +860,6 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     color: white;
 }
 
-.cent h3 {
-    margin: 0px;
-    padding: 0px;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 45px;
-    font-family: "museo", Georgia, serif;
-}
 
 .cent h5 {
     font-size: 20px;
@@ -864,7 +881,10 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     font-weight: 400;
     text-align: left;
     font-size: 16px;
-    text-indent: 50px;
+}
+
+.cent p {
+    margin: .5em 0;
 }
 
 .clickme {
@@ -1051,7 +1071,7 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 /* Reach Out */
 
 .reach-out-cent{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -1061,6 +1081,14 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 .reach-out-cent h3{
     color: white;
     font-size: 26px;
+}
+
+.reach-out-cent h3 a {
+    color: white;
+}
+
+.reach-out-cent h4 {
+    margin-top: 0px;
 }
 
 .social-sharon {
@@ -1240,7 +1268,7 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
 }
 
 form {
-    width: 50%;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     z-index: 1000;
@@ -1270,18 +1298,18 @@ form > input:last-child {
 #submit {
     padding: 10px;
     margin-top: 20px;
-    background-color: #4166B0;
-    color: white;
+    background-color: #D1D2D4;
+    color: #58585B;
     border: none;
     text-align: center;
-    width: 75%;
-    border: 2px solid #4166B0;
+    width: 76%;
+    border: 2px solid #D1D2D4;
 }
 
 form p {
     text-transform: none;
-    color: #BBBDC0;
-    font-size: 10px;
+    color: white;
+    font-size: 14px;
 }
 
 .sumbit-button {
@@ -1289,9 +1317,6 @@ form p {
     z-index: 1000;
 }
 
-#list-border-top {
-    border-top:1px solid #F1F1F2;
-}
 
 /* ==========================================================================
    Loader
@@ -1376,8 +1401,6 @@ form p {
      background-size: cover;
      height: 20px;
 }
-
-
 
 
 

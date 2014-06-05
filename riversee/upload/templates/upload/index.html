@@ -68,9 +68,9 @@
 
 <div class="load-overlay"></div>
 <div class="border-nav" id="navigation">
-    <a href="#section2" class="top">The Show</a>
+    <a href="#section2" class="top">Learn More</a>
     <a href="#section3" class="right">Contact</a>
-    <a href="#section1" class="left">Development</a>
+    <a href="#section1" class="left">Jump In</a>
     <a href="#section4" class="bottom">Story Submissions</a>
     <a href="#home" class="top-right" id="home-button"></a>
 </div>
@@ -90,39 +90,17 @@
                         </div>
                         <nav class="s-menu" id="accordian">
                             <ul>
-                                <li>
-                                    <a href="#section4" id="story-wall"><h3>The Story Bank</h3></a>
+                                <li id="above-logo">
+                                    <a href="#section4" class="story-wall"><h3>The Story Bank</h3></a>
                                 </li>
                                 <li id="list-border-top">
-                                    <h3 class="sumbit-button" id="learning">Learn More</h3>
-                                    <ul>
-                                        <li class="instruction"><p>You’re invited to submit a 2 minute (or less) response to the prompts below. Use word, song, movement, silence, chants, visual images, etc., language/gestural responses highly encouraged. Submissions will be featured on the River See Story Bank.<br>
-
-                                            <strong>The Prompts Are:</strong>
-
-                                            I Am,
-
-                                            I Dream,
-
-                                            I Love,
-
-                                            I Offer</p></li>
-                                    </ul>
+                                    <a href="#section1"  class="story-wall"><h3 class="sumbit-button" id="story-here">Submit Your Story</h3></a>
                                 </li>
                                 <li>
-                                    <h3 class="sumbit-button" id="story-here">Jump In</h3>
-                                    <ul>
-                                        <li>
-                                            <form action="" method="post" id="sumbit-form">
-                                                {% csrf_token %}
-                                                <input type="text" name="name" placeholder="Full Name"><br>
-                                                <input type="text" name="email" placeholder="Email Address"><br>
-                                                <input type="text" name="video_link" placeholder="Vimeo Video Link"><br>
-                                                <input type="submit" value="Submit" id="submit">
-                                                <p>Click "learn more" for instruction</p>
-                                            </form>
-                                        </li>
-                                    </ul>
+                                    <a href="#section2"  class="story-wall"><h3 class="sumbit-button" id="learning">Learn More</h3></a>
+                                </li>
+                                <li>
+                                    <a href=""><h3 class="sumbit-button" id="story-here">River See Blog</h3></a>
                                 </li>
                             </ul>
                         </nav>
@@ -139,8 +117,10 @@
                         <div class="r-description">
                             <div class="r-description-inner">
                                 <h4>A Theatrical Jazz Performance Installation<br>Written and Composed by Sharon Bridgforth<br>Featuring Sonja Parks</h4>
+                                <a id="photo-click">Learn more about the show.</a>
                             </div>
                         </div>
+
                         <a href="#section2" class="arrow-down" id="arrow"></a>
                     </div>
                     <div class="blue-overlay"></div>
@@ -157,19 +137,22 @@
         <ul>
             <li class="sub table-dis" id="section1">
                 <div class="table-container">
-                    <div class="about-container">
-                        <h4 class="section-title">Development Information</h4>
-                        <ul class="section-nav">
-                            <li><a id="load_development1" class="section-button">Development</a></li>
-                            <li><a id="load_development2" class="section-button">Partners</a></li>
-                            <li><a id="load_development3" class="section-button">Premiere</a></li>
-                        </ul>
-                        <div class="about-river">
-                            <div class="about-content">
-                                <div class="about-content-inner" id="dev-content">
-                                </div>
-                            </div>
-                        </div>
+                   
+                        <div class="story-cent">
+                            <h3>Submit your story</h3>
+                                    <ul>
+                                        <li>
+                                            <form action="" method="post" id="sumbit-form">
+                                                {% csrf_token %}
+                                                <input type="text" name="name" placeholder="Full Name"><br>
+                                                <input type="text" name="email" placeholder="Email Address"><br>
+                                                <input type="text" name="video_link" placeholder="Vimeo Video Link"><br>
+                                                <input type="submit" value="Submit" id="submit">
+                                                <p>Click "learn more" for instruction</p>
+                                            </form>
+                                        </li>
+                                    </ul>
+                    
                     </div>
                     <div class="blue-overlay"></div>
                     <div class="inner-image-section1"></div>
@@ -178,10 +161,9 @@
             </li>
             <li class="sub table-dis" id="section2">
                 <div class="table-container">
-                    <div class="cent">
-                        <h3>River See</h3>
-                        <h4 class="show-intro">A Theatrical Jazz Performance Installation<br>Written and Composed by Sharon Bridgforth<br>Featuring Sonja Parks</h4>
-                        <p id="river-description">A series of blues stories set on a river boat, with juking women, queers, deviants and Seers, River See is the prayer before the first Great African American Migration (1910).  Experienced through the heart of, SEE, a young woman-in-training, we journey through a world where the living-the dead-the unborn/the past-the present-the future co-exist.  Lil NayNay, Grandma-Aunt Porkchopps, Big Suzi, Mr. Goodies, Mrs. Shine, Ms. Ada and she ole ass dog Lil Lady shepherd the way.  With rowdy spirit guides and loving elders, SEE grows into her calling as the answered prayer, as she is prepared to be sent "to the North." </p><p>River See explores blues stories as living arrangements of jazz. Through an improvisational process that happens live during performance/with singers, dancers and audience members, Bridgforth composes a moving soundscape in support of SEE’s Journey.  Through this collective process all are responsible for this story/about Love.</p>
+                    <div class="cent learn-more">
+                        <h3>Learn More</h3>
+                        <p id="river-description">Birthed from the River See Theatrical Jazz Performance Installation Written and Composed by Sharon Bridgforth - Featuring Sonja Parks The River See Story Bank is a virtual celebration of Divine Individuality and collective Offerings.</p><p>The River See Theatrical Jazz Performance Installation explores blues stories as living arrangements of jazz. Through an improvisational process that happens live during performance/with singers, dancers and audience members, Bridgforth composes a moving soundscape in support of SEE’s Journey. Through this collective process all are responsible for this story/about Love. More about the performance <a href="http://sharonbridgforthblog.wordpress.com/river-see-3">HERE</a>.</p><p>The River See Story Bank is a virtual space for us to gather/to share our stories & connect. Come on JUMP IN won’t ya…</p><p>You’re invited to submit a 2 minute (or less) response to the prompts (below).Offer: words, song, movement, silence, chants, visual images etc.Multi-lingual/sign language/gestural responses highly encouraged.If English is not your first language/your heart language PLEASE feel free to respond in whatever language your’s is! Submissions will be featured on the River See Story Bank.</p><p><strong>THE PROMPTS ARE: I Am . I Dr e a m . I Love . I Offer .</strong></p><p>There is no right or wrong. Be brave, be vulnerable.Respond from a place of passion and Joy.Let your story come through/in service of contributing to our collectiveRiver of beautiful Loving goodness. There is no deadline. Submissions will be accepted on an ongoing basis. You can submit your video via the Jump In button on this site.</p>
                     </div>
                     <div>
                         <div class="blue-overlay"></div>
@@ -191,18 +173,17 @@
             <li class="sub table-dis" id="section3">
                 <div class="table-container">
                     <div class="reach-out-cent">
-                        <h3><strong>Thank you for jumping in the River with us!</strong><br><br>Please stay in the Flow with us:<br> check out our blog, join our mailing list, join up at upcoming events.<br> Don't forget to submit your story to the River See Story Bank.<br>Blessings and Joy.<br>Ache. </h3>
+                        <h3><strong>Thank you for jumping in the River with us!</strong></h3><h4>Please stay in the Flow with us: check out our blog, join our mailing list, join up at upcoming events. Don't forget to submit your story to the River See Story Bank.<br>Blessings and Joy.<br>Ache. </h4>
                         <div class="social-sharon">
                             <ul>
                                 <li><a href="https://www.facebook.com/SharonBridgforth1"><img src="{{ STATIC_URL }}img/s-facebook.svg"></a></li>
                                 <li><a href="http://www.youtube.com/SBridgforth"><img src="{{ STATIC_URL }}img/s-youtube.svg"></a></li>
                                 <li><a href="https://twitter.com/SBridgforth"><img src="{{ STATIC_URL }}img/s-twitter.svg"></a></li>
                                 <li><a href="https://vimeo.com/sbridgforth"><img src="{{ STATIC_URL }}img/s-vimeo.svg"></a></li>
+                                <li><a href="mailto:riverseestorybank@gmail.com?Subject=River%20See" target="_top"><img src="{{ STATIC_URL }}img/s-mail.svg"></a></li>
                                 <li><a href=""><img src="{{ STATIC_URL }}img/s-paypal.svg"></a></li>
                             </ul>
-                        </div><br><br>
-                        <h3><a href="">Book It</a></h3>
-
+                        </div>
                     </div>
                     <div>
                         <div class="blue-overlay"></div>
@@ -219,6 +200,7 @@
             <li class="sub table-dis" id="section4">
                 <div class="table-container">
                     <div id="story-container" class="cent">
+                        <h3>Jump into our River Bank of Stories</h3>
                         <div class="story-bank">
                             <div class="story-content">
                                 <div class="story-content-inner">

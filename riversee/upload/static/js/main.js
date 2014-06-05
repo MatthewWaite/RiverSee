@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     var learning = $('#learning');
     var submit = $('#story-here');
-    var wall = $('#story-wall');
+    var wall = $('.story-wall');
 
 $(submit).click(function () {
     if ($(learning).hasClass("active-learning")) {
@@ -272,7 +272,7 @@ $(document).ready(function () {
         }, 300);
     });
 
-    $('#story-wall').click(function () {
+    $('.story-wall').click(function () {
         document.getElementById('navigation').style.display = "block";
         $('.border-nav a').stop(true).delay(500).animate({
             height: '40px'
@@ -297,22 +297,6 @@ $(document).load(function () {
 });
 
 
-$(document).ready(function() {
-
-    document.getElementById("dev-content").innerHTML='<object type="text/html" data="development1.html" class="dev-content-inner" style="margin-left: -8px"></object>';
-
-    $("#load_development1").on("click", function() {
-        $("#dev-content").load("/development1/");
-    });
-
-    $("#load_development2").on("click", function() {
-        $("#dev-content").load("/development2/");
-    });
-
-    $("#load_development3").on("click", function() {
-        $("#dev-content").load("/development3/");
-    });
-});
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36  location.reload();
