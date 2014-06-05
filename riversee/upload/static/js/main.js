@@ -1,6 +1,12 @@
 // Home-screen animate
 //--------------------------------------------
 
+$(window).load(function() {
+  $(".load-overlay").fadeOut(1000, function(){
+  $(".inside-pages").fadeIn(1000);
+});
+});
+
 
 $(document).ready(function(){
     $(".s-name, .r-name").css({
