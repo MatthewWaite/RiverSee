@@ -941,6 +941,24 @@ transition: transform .5s cubic-bezier(0.19,1,.22,1);
     z-index: 3;
 }
 
+#story-bank-h5 {
+    padding: 0px 0px 30px 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+#story-bank-h3 {
+    padding: 0px 0px 10px 0px;
+}
+
+#story-bank-h5 a {
+    color: white;
+}
+
+.story-container h3 {
+    
+}
+
 .about-container {
     height: 600px;
 }
