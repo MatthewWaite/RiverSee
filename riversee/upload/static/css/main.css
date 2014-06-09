@@ -1439,6 +1439,9 @@ form p {
      height: 20px;
 }
 
+.white-link, #white-link {
+    color: white;
+}
 
 
 
