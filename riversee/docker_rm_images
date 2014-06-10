@@ -1,0 +1,10 @@
+#!/bin/sh
+# Really remove docker images
+
+img=$1
+if ! sudo docker rmi $img; then
+    for container in $(sudo docker ps -a | grep $img | cut -f1 -d" "); do
+        sudo docker rm $container
+    done
+    sudo docker rmi $img
+fi
