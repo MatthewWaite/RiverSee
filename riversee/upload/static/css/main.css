@@ -364,6 +364,11 @@ Dark-blue: 1F3669;
     background-size: cover;
 }
 
+.learn-more {
+    height: 450px;
+    overflow-y: scroll;
+}
+
 .learn-more a {
     color: white;
 }
@@ -1437,6 +1442,42 @@ form p {
      background-image: url(../img/expand.png);
      background-size: cover;
      height: 20px;
+}
+
+.white-link, #white-link {
+    color: white;
+}
+
+#white-link:hover {
+    background: #00abd6;
+}
+
+.mobile-screen {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-screen {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: #4166B0;
+        position: absolute;
+        z-index: 500;
+    }
+
+    .story-cent h3 {
+        padding-bottom: 20px;
+    }
+
+    .social-sharon {
+        width: 100%;
+    }
+
+    .social-sharon ul li a img {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 
